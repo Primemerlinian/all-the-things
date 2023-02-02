@@ -87,7 +87,7 @@ const App = () => {
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
       />
-      <Route path='/' element={<megansThings />} />
+      <Route path='/the=vampire-things' things={<megansThings />} />
     </Routes>
   )
 }
