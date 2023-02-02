@@ -4,6 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import HerbalThings from './pages/HerbalThings/HerbalThings'
 import Landing from './pages/Landing/Landing'
+import MegansThings from './pages/megansThings/MegansThings'
 
 const App = () => {
   const bensThings = [
@@ -63,6 +64,14 @@ const App = () => {
     },
   ]
 
+  const megansThings = [
+    {
+      name: 'The Count',
+      image: "https://imgs.xkcd.com/comics/vampire.png",
+      attributes: ['thirsty', 'powerful', 'sneaky', 'fast', 'rich']
+    }
+  ]
+
   const jeremysThings = [
     {
       name: "herbal medicine",
@@ -88,6 +97,8 @@ const App = () => {
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
       />
+      <Route path='/the-vampire-things' things={<megansThings />} />
+    </Routes>
         <Route
         path="/the-herbal-things"
         element={<HerbalThings things={jeremysThings} />}
