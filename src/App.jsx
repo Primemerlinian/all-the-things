@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import AustinsThings from './pages/AustinsThings/AustinsThings'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
@@ -87,8 +88,8 @@ const App = () => {
         element={<SillyThings things={huntersThings} />}
       />
       <Route
-        path="/the-silly-things"
-        element={<SillyThings things={austinsThings} />}
+        path="/AustinsThings"
+        element={<AustinsThings things={austinsThings} />}
       />
     </Routes>
   )
