@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import HerbalThings from './pages/HerbalThings/HerbalThings'
 import Landing from './pages/Landing/Landing'
 import MegansThings from './pages/megansThings/MegansThings'
 
@@ -71,6 +72,15 @@ const App = () => {
     }
   ]
 
+  const jeremysThings = [
+    {
+      name: "herbal medicine",
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+      attributes: ["cheap", "effective", "versatile", "earthy"],
+    },
+  ]
+
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -89,6 +99,11 @@ const App = () => {
       />
       <Route path='/the-vampire-things' things={<megansThings />} />
     </Routes>
+        <Route
+        path="/the-herbal-things"
+        element={<HerbalThings things={jeremysThings} />}
+      />
+  </Routes>
   )
 }
 
